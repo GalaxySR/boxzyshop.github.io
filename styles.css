@@ -123,48 +123,6 @@ main {
     color: #555;
 }
 
-/* Game List */
-.game-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.game-item {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.game-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.game-item:hover {
-    transform: translateY(-10px);
-}
-
-.game-info h2 {
-    font-size: 22px;
-    padding: 20px;
-    color: #333;
-}
-
-.game-info p {
-    padding: 0 20px;
-    font-size: 16px;
-    color: #555;
-}
-
-.game-info .btn {
-    margin: 20px;
-}
-
 /* Footer */
 footer {
     background-color: #282c34;
@@ -175,45 +133,4 @@ footer {
 
 footer p {
     font-size: 14px;
-}
-
-/* Form */
-.contact-form {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact-form label {
-    font-size: 18px;
-    margin-bottom: 10px;
-    display: block;
-    color: #333;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.contact-form button {
-    background-color: #61dafb;
-    color: #fff;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #21a1d5;
 }
