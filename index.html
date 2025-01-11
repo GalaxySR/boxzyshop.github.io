@@ -3,48 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Ty's Website">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Ty">
+    <title>Ty's Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon for the browser tab -->
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#blog">Blog</a></li>
-        </ul>
-    </nav>
-</header>
+<!-- Top Bar -->
+<div class="top-bar">
+    <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+    </ul>
+</div>
 
-<main>
-    <section class="intro">
-        <h1>Welcome to My Portfolio</h1>
-        <img src="profile-picture.jpg" alt="Profile Picture" class="profile-pic">
-        <p>Where I share my work and thoughts with a warm cup of inspiration.</p>
-    </section>
+<!-- Main Content -->
+<h1>Welcome to My Portfolio</h1>
+<div class="pfp"></div>
+<p>Where I share my work and thoughts with a warm cup of inspiration.</p>
 
-    <section id="projects" class="projects">
-        <h2>My Projects</h2>
-        <p>Here are some of the projects I’ve worked on:</p>
-        <div class="project-list">
-            <div class="project-card">
-                <h3>This Website</h3>
-                <p>The website you are currently viewing.</p>
-            </div>
-            <div class="project-card">
-                <h3>Unity Notepad</h3>
-                <p>A custom notepad tool for Unity developers.</p>
-            </div>
-            <div class="project-card">
-                <h3>BoxzyUI</h3>
-                <p>A Fabric mod with an intuitive user interface.</p>
-            </div>
-        </div>
-    </section>
-</main>
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <p>Here are some of the projects I've worked on:</p>
+    <div class="project-card">
+        <h3>This Website</h3>
+        <p>The website you are currently viewing.</p>
+    </div>
+    <div class="project-card">
+        <h3>Unity Notepad</h3>
+        <p>A notepad made in the GAME engine unity.</p>
+    </div>
+    <div class="project-card">
+        <h3>Minecraft: Skyworld</h3>
+        <p>A fangame of Minecraft based on Minecraft Skyblock but with an isometric view.</p>
+    </div>
+</section>
 
-<footer>
-    <p>&copy; 2025 My Portfolio</p>
-</footer>
+<!-- Blog Section -->
+<section id="blog" class="blog">
+    <h2>My Blog</h2>
+    <p>Grab a cup of tea and check out my latest thoughts:</p>
+    <div class="post">
+        <h3>I made a website</h3>
+        <p class="post-content">I think you can tell but I finally made a good website! I've wanted to make a website like this for ages and now it's here! I'm not that good of a coder so i wouldn't recommend  reading the source code 😳.</p>
+    </div>
+
+    <!--
+    <div class="post">
+        <h3>Placeholder</h3>
+        <p class="post-content">Placeholder.</p>
+    </div>
+    <div class="post">
+        <h3>Placeholder</h3>
+        <p class="post-content">Placeholder.</p>
+    </div>
+
+    -->
+</section>
 </body>
 </html>

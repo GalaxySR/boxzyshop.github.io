@@ -1,128 +1,160 @@
-/* Reset default margin and padding */
-* {
+@font-face {
+    font-family: 'CustomFont'; /* Name for the font */
+    src: url('fonts/font.ttf') format('truetype'); /* Path to the font file */
+    font-weight: bolder; /* Specify weight (optional) */
+    font-style: italic; /* Specify style (optional) */
+}
+html, body {
+    font-family: 'CustomFont', sans-serif;
+    background-color: #f4ece1; /* Soft cream background */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body styling */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4ede4;
-    color: #5f4b3b;
-    line-height: 1.6;
-}
-
-/* Header navigation */
-header {
-    background-color: #b3967d;
-    padding: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s;
+    line-height: 1.8;
 }
 
-nav ul li a:hover {
-    color: #f7d7c4;
-}
-
-/* Intro section */
-.intro {
+h1 {
     text-align: center;
-    padding: 40px 20px;
+    color: #725843; /* Warm coffee tone for titles */
+    font-size: 34px;
+    margin-top: 20px;
 }
 
-.intro h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #6b4f38;
+p {
+    text-align: center;
+    font-weight: bold;
+    color: #725843;
+    font-size: 20px;
+    margin-top: 10px;
 }
 
-.intro img.profile-pic {
-    width: 150px;
-    height: 150px;
+.pfp {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('https://yt3.ggpht.com/SVCbPu2IUPiwRkLUHdNBCcADa28vvj-ehA41eTminx0d-ycQYF4fley9cU6oJBSE3Va8Z1yjVSw=s108-c-k-c0x00ffffff-no-rj');
+    margin: 20px auto; /* Add some top margin */
+    display: block;
     border-radius: 50%;
-    border: 5px solid #b3967d;
-    margin-bottom: 20px;
-}
-
-.intro p {
-    font-size: 18px;
-    color: #7d6450;
-}
-
-/* Projects section */
-.projects {
-    padding: 40px 10%;
-    background-color: #fff3e4;
-    text-align: center;
-    border-radius: 20px;
-    margin: 20px auto;
-    width: 80%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.projects h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-    color: #6b4f38;
-}
-
-.projects p {
-    margin-bottom: 20px;
-    font-size: 16px;
-    color: #7d6450;
-}
-
-.project-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.project-card {
-    background-color: #dec9b5;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 8px solid #d1b591; /* Softer beige border */
     transition: transform 0.3s ease;
 }
 
-.project-card:hover {
-    transform: translateY(-10px);
+/* Hover effect for the pfp */
+.pfp:hover {
+    transform: scale(1.08); /* Slightly larger hover effect */
 }
 
-.project-card h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #5f4b3b;
-}
-
-.project-card p {
-    font-size: 16px;
-    color: #7d6450;
-}
-
-/* Footer */
-footer {
-    background-color: #b3967d;
-    color: #fff;
+/* Top Bar Styles */
+.top-bar {
+    background-color: #b2977b; /* Warm beige-brown */
+    padding: 15px;
     text-align: center;
+    border-bottom: 3px solid #8c6d5b;
+}
+
+.top-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.top-bar a {
+    color: #fef7ed; /* Soft off-white */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.top-bar a:hover {
+    color: #f7d7bf; /* Light peach on hover */
+}
+
+/* Projects and Blog Sections */
+.projects, .blog {
+    padding: 25px;
+    margin: 20px auto;
+    background-color: #faf0e0; /* Very light beige */
+    border-radius: 15px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08); /* Softer shadow */
+}
+
+.projects h2, .blog h2 {
+    text-align: center;
+    color: #8c6d5b;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.projects li, .blog li {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.projects li a, .blog li a {
+    color: #a38266; /* Warm taupe */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.projects li a:hover, .blog li a:hover {
+    text-decoration: underline;
+}
+
+/* Project Cards */
+.project-card {
+    background-color: #e2ccb6; /* Light beige */
     padding: 20px;
-    margin-top: 40px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Diffused shadow */
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    background-color: #f7dec8; /* Slightly lighter beige */
+    transform: scale(1.03); /* Subtle zoom */
+}
+
+/* Blog Posts */
+.blog .post {
+    background-color: #e2ccb6; /* Match project cards */
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.blog .post:hover {
+    background-color: #f7dec8; /* Hover effect */
+    transform: scale(1.03);
+}
+
+.blog .post a {
+    color: #a38266;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.blog .post a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    text-align: center;
+    color: #8c6d5b;
+    font-size: 22px;
 }
